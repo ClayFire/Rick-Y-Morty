@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Personajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let losDatos of personajes ">
+    <ionic-card-title>{{ losDatos.name }}</ionic-card-title>
+    ¨<img [src]="losDatos.image">
+  </ion-card>
+</ion-content>
